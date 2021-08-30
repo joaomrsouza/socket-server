@@ -6,6 +6,10 @@ const io = require('socket.io')(http, {
     cors: { origin: "*" }
 });
 
+app.get("/", (req, res) => {
+  res.send(200);
+});
+
 app.get("/socket.io/", (req, res) => {
   res.send(200);
 });
